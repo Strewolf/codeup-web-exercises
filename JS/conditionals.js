@@ -62,6 +62,7 @@
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
+let favColor = prompt ("Hello, whats your favorite color?")
 function analyzeColor(color){
     switch (color){
         case "red":
