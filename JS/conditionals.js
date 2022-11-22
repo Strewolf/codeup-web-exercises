@@ -187,4 +187,13 @@ console.log(calculateTotal(luckyNumber,totalAmount))
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
-let userInput = confirm ("Would you like to enter a number");
+confirm ("Would you like to enter a number");
+let userInput = prompt ("Please input your number value");
+if (userInput % 2 == 0){
+    alert ("The number is even")
+} else {
+    alert ("the number is odd");
+}
+if (userInput){
+    alert ("Your number plus 100 equals" + (userInput + 100));
+}
