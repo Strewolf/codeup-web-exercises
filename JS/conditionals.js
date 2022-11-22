@@ -121,18 +121,24 @@ console.log(analyzeColor(color))
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-let totalAmount = "100"
+let totalAmount = prompt ("Please input total bill amount?")
 var luckyNumber = Math.floor(Math.random() * 6);
 function calculateTotal(luckyNumber,totalAmount){
     switch (luckyNumber) {
         case  0:
-            return totalAmount - (totalAmount * 1)
+            alert ("your lucky number was 0, sorry you don't get a discount ;(");
+            alert ("your total bill before discount comes up to " + totalAmount);
+            alert ("Your total bill after the discount comes up to" + totalAmount - (totalAmount * 1));
             break;
         case  1:
-            return totalAmount - (totalAmount * .1)
+            alert("Congratulations!! your lucky number was 1, you will receive a 10% discount!");
+            alert("your total bill before discount comes up to " + totalAmount);
+            alert ("Your total bill amount after discount will be " + totalAmount - (totalAmount * .1));
             break;
         case  2:
-            return totalAmount - (totalAmount * .25)
+            alert("Congratulations!! your lucky number is 2, you will receive a 25% discount!");
+            alert ("Your total bill before discount comes up to " + totalAmount);
+            alert ("Your total bill mount after discount will be " + totalAmount - (totalAmount * .25));
             break;
         case  3:
             return totalAmount - (totalAmount * .35)
