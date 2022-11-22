@@ -141,13 +141,19 @@ function calculateTotal(luckyNumber,totalAmount){
             alert ("Your total bill mount after discount will be " + totalAmount - (totalAmount * .25));
             break;
         case  3:
-            return totalAmount - (totalAmount * .35)
+            alert ("Congratulations!! your lucky number was 3, you will receive a 35% discount!");
+            alert ("Your total bill before discount comes up to "+ totalAmount);
+            alert ("Your total bill amount after discount will be " + totalAmount - (totalAmount * .35));
             break;
         case  4:
-            return totalAmount - (totalAmount * .50)
+            alert ("Congratulations!! your lucky number was 4, you will receive a 50% discount!");
+            alert ("Your total bill before discount comes up to " + totalAmount);
+            alert ("Your total bill amount after discount will be " + totalAmount - (totalAmount * .50));
             break;
         case  5:
-            return totalAmount - (totalAmount * 0)
+            alert ("Congratulations!! your lucky number was 5, you will receive your items for free!!!!");
+            alert ("Your total bill before discount comes up to " + totalAmount);
+            alert ("Your total bill amount after discount will be " + totalAmount - (totalAmount * 0))
     }
 }
 
