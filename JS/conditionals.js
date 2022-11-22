@@ -92,7 +92,7 @@ function analyzeColor(color){
 
 }
 
-console.log(analyzeColor(favcolor)
+console.log(analyzeColor("red"))
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
