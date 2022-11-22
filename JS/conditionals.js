@@ -69,31 +69,30 @@ function analyzeColor(color){
         alert ("red just like my solo cup!")
         break;
           case "green":
-        return "green is my favorite color!"
+        alert ("green is my favorite color!")
          break;
           case "blue":
-        return "blue, the color of the sky"
+        alert ("blue, the color of the sky")
          break;
           case"orange":
-        return "this color reminds me of my favorite fruit"
+        alert ("this color reminds me of my favorite fruit")
          break;
           case "yellow":
-        return "eh yellow is okay"
+        alert ("eh yellow is okay")
          break;
           case "indigo":
-        return "indigo, also on e of my favorites"
+        alert ("indigo, also on e of my favorites")
         break;
           case "violet":
-        return "violet, also the name to my favorite song"
+        alert ("violet, also the name to my favorite song")
         break;
         default:
-        return "I do not know this color"
-        alert
+        alert ("I do not know this color")
     }
 
 }
 
-console.log(analyzeColor("red"))
+console.log(analyzeColor(favcolor)
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
