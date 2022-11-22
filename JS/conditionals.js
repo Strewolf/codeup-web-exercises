@@ -121,7 +121,7 @@ console.log(analyzeColor(color))
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-let totalAmount = prompt ("Please input total bill amount?")
+/**let totalAmount = prompt ("Please input total bill amount?")
 var luckyNumber = Math.floor(Math.random() * 6);
 function calculateTotal(luckyNumber,totalAmount){
     switch (luckyNumber) {
@@ -187,3 +187,4 @@ console.log(calculateTotal(luckyNumber,totalAmount))
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+let userInput = confirm ("Would you like to enter a number");
