@@ -128,32 +128,32 @@ function calculateTotal(luckyNumber,totalAmount){
         case  0:
             alert ("your lucky number was 0, sorry you don't get a discount ;(");
             alert ("your total bill before discount comes up to " + totalAmount);
-            alert ("Your total bill after the discount comes up to" + totalAmount - (totalAmount * 1));
+            alert ("Your total bill after the discount comes up to" + (totalAmount - (totalAmount * 1)));
             break;
         case  1:
             alert("Congratulations!! your lucky number was 1, you will receive a 10% discount!");
             alert("your total bill before discount comes up to " + totalAmount);
-            alert ("Your total bill amount after discount will be " + totalAmount - (totalAmount * .1));
+            alert ("Your total bill amount after discount will be " + (totalAmount - (totalAmount * .1)));
             break;
         case  2:
             alert("Congratulations!! your lucky number is 2, you will receive a 25% discount!");
             alert ("Your total bill before discount comes up to " + totalAmount);
-            alert ("Your total bill mount after discount will be " + totalAmount - (totalAmount * .25));
+            alert ("Your total bill mount after discount will be " + (totalAmount - (totalAmount * .25)));
             break;
         case  3:
             alert ("Congratulations!! your lucky number was 3, you will receive a 35% discount!");
             alert ("Your total bill before discount comes up to "+ totalAmount);
-            alert ("Your total bill amount after discount will be " + totalAmount - (totalAmount * .35));
+            alert ("Your total bill amount after discount will be " + (totalAmount - (totalAmount * .35)));
             break;
         case  4:
             alert ("Congratulations!! your lucky number was 4, you will receive a 50% discount!");
             alert ("Your total bill before discount comes up to " + totalAmount);
-            alert ("Your total bill amount after discount will be " + totalAmount - (totalAmount * .50));
+            alert ("Your total bill amount after discount will be " + (totalAmount - (totalAmount * .50)));
             break;
         case  5:
             alert ("Congratulations!! your lucky number was 5, you will receive your items for free!!!!");
             alert ("Your total bill before discount comes up to " + totalAmount);
-            alert ("Your total bill amount after discount will be " + totalAmount - (totalAmount * 0))
+            alert ("Your total bill amount after discount will be " + (totalAmount - (totalAmount * 0)));
     }
 }
 
