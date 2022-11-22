@@ -91,7 +91,7 @@ function analyzeColor(color){
 
 }
 
-console.log(analyzeColor("pineapple"))
+console.log(analyzeColor("violet"))
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
