@@ -83,7 +83,7 @@ console.log
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-unction applyDiscount(x, y){
+function applyDiscount(x, y){
     var discount = x * (y * .01);
     var discountedPrice = x - discount;
     return discountedPrice;
