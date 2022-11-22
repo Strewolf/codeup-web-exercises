@@ -194,6 +194,6 @@ if (userInput % 2 == 0){
 } else {
     alert ("the number is odd");
 }
-if (userInput){
-    alert ("Your number plus 100 equals" + (userInput + 100));
+if (userInput + 100){
+    alert ("Your number plus 100 equals" + userInput);
 }
