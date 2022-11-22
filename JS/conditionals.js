@@ -124,26 +124,28 @@ console.log(analyzeColor(color))
 let totalAmount = "100"
 var luckyNumber = Math.floor(Math.random() * 6);
 function calculateTotal(luckyNumber,totalAmount){
-    switch (luckyNumber)
-    case  0
-    return  luckyNumber - (totalAmount*1)
-    break;
-    case  1
-    return luckyNumber - (totalAmount*.1)
-    break;
-    case  2
-    return luckyNumber - (totalAmount*.25)
-    break;
-    case  3
-    return luckynumber - (totalAmount*.35)
-    break;
-    case  4
-    return luckyNumber - (totalAmount*.50)
-    break;
-    case  5
-    return luckyNumber - (totalAmount*0)
+    switch (luckyNumber) {
+        case  0:
+            return totalAmount - (totalAmount * 1)
+            break;
+        case  1:
+            return totalAmount - (totalAmount * .1)
+            break;
+        case  2:
+            return totalAmount - (totalAmount * .25)
+            break;
+        case  3:
+            return totalAmount - (totalAmount * .35)
+            break;
+        case  4:
+            return totalAmount - (totalAmount * .50)
+            break;
+        case  5:
+            return totalAmount - (totalAmount * 0)
+    }
 }
 
+console.log(calculateTotal(luckyNumber,totalAmount))
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
