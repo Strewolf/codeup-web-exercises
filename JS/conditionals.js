@@ -62,11 +62,11 @@
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-let favColor = prompt ("Hello, whats your favorite color?")
 function analyzeColor(color){
+    let favColor = prompt ("Hello, whats your favorite color?")
     switch (color){
         case "red":
-        return "red just like my solo cup!"
+        alert ("red just like my solo cup!")
         break;
           case "green":
         return "green is my favorite color!"
@@ -88,11 +88,12 @@ function analyzeColor(color){
         break;
         default:
         return "I do not know this color"
+        alert
     }
 
 }
 
-console.log(analyzeColor("violet"))
+console.log(analyzeColor("red"))
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
