@@ -71,7 +71,7 @@ return false
  */
 function calculatetip(tippercent,total){
     (tippercent*total)
-    return (tippercent*total)
+    return (tippercent*total);
 }
 let tipamount= prompt ("How much would you like to tip today?");
 let totalamount = prompt ("how much was your total bill?")
