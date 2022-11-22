@@ -62,8 +62,8 @@
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
+/**let color = prompt ("Hello, whats your favorite color?")
 function analyzeColor(color){
-    let favColor = prompt ("Hello, whats your favorite color?")
     switch (color){
         case "red":
         alert ("red just like my solo cup!")
@@ -72,7 +72,7 @@ function analyzeColor(color){
         alert ("green is my favorite color!")
          break;
           case "blue":
-        alert ("blue, the color of the sky")
+        alert ("blue), the color of the sky")
          break;
           case"orange":
         alert ("this color reminds me of my favorite fruit")
@@ -91,8 +91,8 @@ function analyzeColor(color){
     }
 
 }
-
-console.log(analyzeColor("red"))
+console.log(analyzeColor(color))
+*/
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
@@ -121,6 +121,28 @@ console.log(analyzeColor("red"))
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+let totalAmount = "100"
+var luckyNumber = Math.floor(Math.random() * 6);
+function calculateTotal(luckyNumber,totalAmount){
+    switch (luckyNumber)
+    case  0
+    return  luckyNumber - (totalAmount*1)
+    break;
+    case  1
+    return luckyNumber - (totalAmount*.1)
+    break;
+    case  2
+    return luckyNumber - (totalAmount*.25)
+    break;
+    case  3
+    return luckynumber - (totalAmount*.35)
+    break;
+    case  4
+    return luckyNumber - (totalAmount*.50)
+    break;
+    case  5
+    return luckyNumber - (totalAmount*0)
+}
 
 /**
  * TODO:
