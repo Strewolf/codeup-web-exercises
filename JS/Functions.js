@@ -73,15 +73,22 @@ function calculatetip(tippercent,total){
     (tippercent*total)
     return (tippercent*total)
 }
-let tipamount= prompt (How much would you like to tip today?);
-let totalamount = confirmed (how much was your total bill?)
-alert (tipamount*totalamount + " This will be your tip for the bill")
+let tipamount= prompt ("How much would you like to tip today?");
+let totalamount = prompt ("how much was your total bill?")
+alert (tipamount*totalamount + " will be your tip for the bill")
+console.log
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+unction applyDiscount(x, y){
+    var discount = x * (y * .01);
+    var discountedPrice = x - discount;
+    return discountedPrice;
+}
+console.log(applyDiscount(100, 20));
 
 /**
  * TODO:
