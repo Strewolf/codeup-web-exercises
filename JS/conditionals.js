@@ -405,11 +405,11 @@ calculateTotal(luckyNumber,totalAmount);
 */
 // Don't change the next two lines!
 // These lines create two variables for you:
-// - `colors`: a list of the colors of the rainbow
-// - `randomColor`: contains a single random color value from the list (this
+ //`colors`: a list of the colors of the rainbow
+ //`randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-// var randomColor = colors[Math.floor(Math.random() * colors.length)];
+ var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
 /**
  * TODO:
@@ -421,7 +421,7 @@ calculateTotal(luckyNumber,totalAmount);
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
- function analyzeColor2(randomColor) {
+ /**function analyzeColor2(randomColor) {
      switch (randomColor){
          case "red":
              alert("Yuck, I hate " + randomColor);
@@ -446,8 +446,8 @@ calculateTotal(luckyNumber,totalAmount);
              break;
      }
  }
- console.log(analyzeColor2(randomColor));
-
+  analyzeColor2(randomColor)
+*/
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
@@ -539,7 +539,7 @@ calculateTotal(luckyNumber,totalAmount);
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
-/**if (confirm("Would you like to enter a number?")) {
+if (confirm("Would you like to enter a number?")) {
     var theNumber = prompt("Please enter a number");
     if(typeof theNumber === "number"){
         if (theNumber % 2 == 0) {
@@ -558,4 +558,4 @@ calculateTotal(luckyNumber,totalAmount);
     }
 }
 
-*/
+
