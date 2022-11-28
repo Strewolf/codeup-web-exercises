@@ -493,7 +493,7 @@ console.log(discount);*/
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-/**var luckyNumber = Math.floor(Math.random() * 6);
+/var luckyNumber = Math.floor(Math.random() * 6);
 var totalAmount = prompt("what was your total bill?");
 function calculateTotal(luckyNumber,totalAmount) {
     var discount;
@@ -523,8 +523,8 @@ function calculateTotal(luckyNumber,totalAmount) {
 calculateTotal(luckyNumber,totalAmount);
 */
 
-/**
- * TODO:
+
+ /** TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
  * would like to enter a number. If they click 'Ok', prompt the user for a
  * number, then use 3 separate alerts to tell the user:
@@ -541,21 +541,18 @@ calculateTotal(luckyNumber,totalAmount);
  */
 if (confirm("Would you like to enter a number?")) {
     var theNumber = prompt("Please enter a number");
-    if(typeof theNumber === "number"){
         if (theNumber % 2 == 0) {
             alert("the number is even");
         } else {
             alert("the number is odd");
         }
-        alert("the number plus 100 is " + (+theNumber + 100));
+        alert("the number plus 100 is " + ( parseInt(theNumber) + 100));
         if (theNumber < 0) {
             alert("the number is negative");
         } else {
             alert("the number is positive");
         }
-    } else {
-        alert("boy, pick a number");
     }
-}
+
 
 
