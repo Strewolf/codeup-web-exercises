@@ -1,5 +1,10 @@
+var shapes = ['square', 'rectangle', 'circle', 'triangle'];
 
-function showMultiplicationTable (i,7)
-    for (let i=1; i < 11){
-        console.log(+ 7*i); i++;
-    }
+// loop through the array and log the values
+for (var i = 0; i < shapes.length; i++) {
+    console.log('The shape at index ' + i + ' is: ' + shapes[i]);
+}
+
+
+
+
