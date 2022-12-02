@@ -117,7 +117,7 @@ let students = [
     - PROS: variety of traversals
     - CONS: more complicated syntax
     -  USE: when you need to iterate partially or backwards through an array
-
+7.log
  */
 
 // example
