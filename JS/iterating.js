@@ -57,15 +57,18 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
+ let numArr = ["john","tony","lisa","ann"]
+     =>{
 
-    function retrieve() {
+
+
         let names=["john","tony","lisa","ann"]
         for (let i = 0; i < names.length; i++) {
             console.log(names[0])
             break;
         }
     }
-  /**  for(let i=0;i<names.length; i++){
+   for(let i=0;i<names.length; i++){
         console.log(names[1])
         break;
     }
@@ -73,5 +76,5 @@
         console.log(names[3])
         break;
     }
-*/
+
 
