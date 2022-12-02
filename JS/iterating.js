@@ -19,9 +19,9 @@
      * Create log statements that will print each of the names individually by
      * accessing each element's index.
      */
-   let names=["john","tony","lisa","ann"]
+   //let names=["john","tony","lisa","ann"]
 
-    console.log(names)
+    //console.log(names)
     /**
      * TODO:
      * Write some code that uses a for loop to log every item in the names
@@ -40,9 +40,9 @@
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
-   // let names=["john","tony","lisa","ann"]
-    //  names.forEach((names) =>
-    // console.log(names))
+    //let names=["john","tony","lisa","ann"]
+   //   names.forEach((names) =>
+  //  console.log(names))
     /**
      * TODO:
      * Create the following three functions, each will accept an array and
@@ -56,4 +56,22 @@
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
+
+
+    function retrieve() {
+        let names=["john","tony","lisa","ann"]
+        for (let i = 0; i < names.length; i++) {
+            console.log(names[0])
+            break;
+        }
+    }
+  /**  for(let i=0;i<names.length; i++){
+        console.log(names[1])
+        break;
+    }
+    for(let i=0;i<names.length; i++){
+        console.log(names[3])
+        break;
+    }
+*/
 
