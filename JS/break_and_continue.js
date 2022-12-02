@@ -1,4 +1,4 @@
-while(true){
+/**while(true){
     let userNum = prompt("ENTER AN ODD NUMBER BETWEEN 1 AND 50");
     userNum= parseFloat(userNum);
     if(userNum % 2==1 && userNum <= 50 && userNum >=1){
@@ -12,3 +12,4 @@ while(true){
         break;
     }}
 }
+ */
