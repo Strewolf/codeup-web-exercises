@@ -10,22 +10,18 @@ for(let i = 0, num = 2; i < 16;i++){
     num *= 2;
 }
  */
-// This is how you get a random number between 50 and 100
 let allCones = Math.floor(Math.random() * 50) + 50;
-// This expression will generate a random number between 1 and 5
-let soldCones = Math.floor(Math.random() * 5) + 1;
-do {
-    if (allCones <= soldCones) {
-        console.log(`${allCones} cones sold...`)
-        soldCones -= allCones
-    } else {
-        console.log(`cannot sell to you ${allCones} cones, I have only ${soldCones}...`)
-        console.log(`${soldCones} cones sold...`)
-        soldCones -= allCones
+console.log("Today you have to sell: " + allCones + " ice cream cones");
+let i = allCones;
 
+while (i > 0) {
+    let r =Math.floor(Math.random() * 5) + 1;
+    console.log(r + " cones sold...");
+    i -= r;
+    console.log(i + " cones left");
+    if (i < 0) {
+        console.log("cannot sell you that")
+    } else if (i === 0) {
+        console.log("Out of cones!");
     }
-    if (soldCones === 0) {
-        console.log(`yay! you have sold all the cones`)
-        break;
-    }
-}while (i>5)
+}
