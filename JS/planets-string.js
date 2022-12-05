@@ -1,8 +1,8 @@
 (function(){
     "use strict";
 
-    let planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-    let planetsArray= Array.from (planetsString)
+    var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
+    var planetsArray=planetsString.split("|")
 
     /**
      * TODO:
@@ -11,7 +11,7 @@
      * console.log planetsArray to check your work
      */
 
-     console.log(planetsArray)
+     console.log(planetsArray);
 
     /**
      * TODO:
