@@ -1,4 +1,4 @@
-(function() {
+
     "use strict";
 
     /**
@@ -11,7 +11,14 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
-
+let person={
+    firstname:'Horace',
+        lastname:'Smith'
+    }
+    console.log(person.firstname)
+    console.log(person.lastname)
+    person.sayHello = "Hello from"
+    console.log(`${person.sayHello} ${person.firstname} ${person.lastname}`)
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -54,6 +61,43 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+let books = [{
+
+        title: "Akina Speedstar",
+       author: {
+           firstname: "Xavier ",
+           lastname: "wulf"
+       },
+        {
+            title: "The midnight sun",
+            author:{
+                firstname:"Damien",
+                lastname:"Clark"
+            }
+        },
+        {
+            title:"Kingdom of Babylon",
+            author: {
+                firstname: "Gerard",
+                lastname: "Lucious"
+            }
+        },
+        {
+            title:"Over the moon",
+            author:{
+                firstname:"stephanie",
+                lastname:"applebottom"
+            }
+        },
+        {
+            title:"In the abyss",
+            author:{
+                firstname:"Mike",
+                lastname:"Pendletin"
+        }}
+
+
+    }]
 
     /**
      * TODO:
@@ -91,4 +135,3 @@
      *   `showBookInfo` function.
      */
 
-})();
