@@ -155,14 +155,15 @@ let books = [{
      *   `showBookInfo` function.
      */
 let createBook= function(title,Firstname,Lastname) {
-        return [
+    let book={}
+    return [
             {
-                title: title,
-                Author: {
-                    Firstname: Firstname,
-                    Lastname: Lastname
-                }
-            }
+                book.title = title,
+                book.author = {
+            book.authorfirstname = Firstname,
+                book.authorlastname = Lastname
+        }
+    }
         ]
     }
 
