@@ -57,24 +57,18 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
- let numArr = ["john","tony","lisa","ann"]
-     =>{
 
 
-
-        let names=["john","tony","lisa","ann"]
-        for (let i = 0; i < names.length; i++) {
+        let names = ["john","tony","lisa","ann"]
+    names.forEach(function (element, index,array){
             console.log(names[0])
-            break;
-        }
-    }
-   for(let i=0;i<names.length; i++){
+    })
+
+
+    names.forEach(function (element, index,array){
         console.log(names[1])
-        break;
-    }
-    for(let i=0;i<names.length; i++){
+    })
+
+    names.forEach(function (element, index,array){
         console.log(names[3])
-        break;
-    }
-
-
+    })
