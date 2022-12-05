@@ -43,12 +43,27 @@ let person={
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
-
+     var shoppers = [
+         {name: 'Cameron', amount: 180},
+         {name: 'Ryan', amount: 250},
+         {name: 'George', amount: 320}
+     ];
+shoppers.forEach(function(shopper){
+    let discountAmount= shopper.amount*.12
+    let afterDiscount= shopper.amount - discountAmount
+    if (shopper.amount>200){
+        console.log(shopper.name)
+        console.log(`your amount before discount is $ ${shopper.amount}`)
+        console.log(`Your discount will be 12% for your purchase`)
+        console.log(`The discount amount will be $ ${discountAmount}`)
+        console.log(`Your total purchase amount will be $ ${afterDiscount} `)
+    } else {
+        console.log(shopper.name)
+        console.log(`Your amount will be $ ${shopper.amount}`)
+        console.log(`You will not have a discount with your purchase`)
+        console.log(`Your total amount will be $ ${shopper.amount}`)
+    }
+    })
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
@@ -67,7 +82,7 @@ let books = [{
        author: {
            firstname: "Xavier ",
            lastname: "wulf"
-       },
+       }},
         {
             title: "The midnight sun",
             author:{
@@ -94,11 +109,16 @@ let books = [{
             author:{
                 firstname:"Mike",
                 lastname:"Pendletin"
-        }}
+        }},
 
 
-    }]
+    ]
+/**books.forEach(function(book,i) {
+    console.log(`Book# ${books.indexOf(book)+1}`)
+    console.log(`Title: ${book.title}`)
+    console.log(`Author: ${book.author.firstname} ${book.author.lastname}`)
 
+})*/
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -134,4 +154,27 @@ let books = [{
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+let createBook= function(title,Firstname,Lastname) {
+        return [
+            {
+                title: title,
+                Author: {
+                    Firstname: Firstname,
+                    Lastname: Lastname
+                }
+            }
+        ]
+    }
+
+
+function showBookInfo(newBook){
+    books.push(newBook)
+    return books
+
+
+
+    }
+
+    console.log(showBookInfo(createBook("Akina Speedstar", "Xavier", "wulf")))
+
 
