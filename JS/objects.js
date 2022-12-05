@@ -158,24 +158,14 @@ let createBook= function(title,Firstname,Lastname) {
     let book={}
     return [
             {
-                book.title = title,
-                book.author = {
-            book.authorfirstname = Firstname,
-                book.authorlastname = Lastname
+                books.title = title,
+                books.author = {
+            author.firstname = Firstname,
+                book.author.lastname = Lastname
         }
     }
         ]
     }
 
-
-function showBookInfo(newBook){
-    books.push(newBook)
-    return books
-
-
-
-    }
-
-    console.log(showBookInfo(createBook("Akina Speedstar", "Xavier", "wulf")))
 
 
