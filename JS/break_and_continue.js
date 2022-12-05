@@ -1,15 +1,16 @@
-/**while(true){
-    let userNum = prompt("ENTER AN ODD NUMBER BETWEEN 1 AND 50");
-    userNum= parseFloat(userNum);
-    if(userNum % 2==1 && userNum <= 50 && userNum >=1){
-    for(let i=1;1<=50;i+=2){
-        if(i === userNum){
-            continue;
-
-        }else{
-            console.log(`here is an odd number: ${i}`)
-        }
+for (let i = 1; i <= 50; i++){
+    let userNumber = prompt("Enter an odd number between 1 and 50");
+    if (userNumber % 2 !== 0 && userNumber < 50) {
+        console.log("Your number to skip is: " + userNumber);
         break;
-    }}
+    }
 }
- */
+
+for (let n = 1; n <= 50; n++){
+    if (n == userNumber) {
+        console.log("Skipping this number...");
+        continue;
+    } else if (n % 2 !== 0) {
+        console.log("Here is an odd number: " + n);
+    }
+}
