@@ -113,12 +113,12 @@ let books = [{
 
 
     ]
-/**books.forEach(function(book,i) {
+books.forEach(function(book,i) {
     console.log(`Book# ${books.indexOf(book)+1}`)
     console.log(`Title: ${book.title}`)
     console.log(`Author: ${book.author.firstname} ${book.author.lastname}`)
 
-})*/
+})
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -154,7 +154,7 @@ let books = [{
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
-let createBook= function(title,Firstname,Lastname) {
+/**let createBook= function(title,Firstname,Lastname) {
     let book={}
     return [
             {
@@ -168,4 +168,4 @@ let createBook= function(title,Firstname,Lastname) {
     }
 
 
-
+*/
