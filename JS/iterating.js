@@ -6,31 +6,31 @@
      * Create an array of 4 people's names and store it in a variable called
      * 'names'.
      */
-//let names=["john","tony","lisa","ann"]
+let names=["john","tony","lisa","ann"]
     /**
      * TODO:
      * Create a log statement that will log the number of elements in the names
      * array.
      */
-   // let names=["john","tony","lisa","ann"]
-    //console.log(names.length)
+    let names=["john","tony","lisa","ann"]
+    console.log(names.length)
     /**
      * TODO:
      * Create log statements that will print each of the names individually by
      * accessing each element's index.
      */
-   //let names=["john","tony","lisa","ann"]
+   let names=["john","tony","lisa","ann"]
 
-    //console.log(names)
+    console.log(names)
     /**
      * TODO:
      * Write some code that uses a for loop to log every item in the names
      * array.
      */
-    //let names=["john","tony","lisa","ann"]
-   // for(let i=0;i<names.length; i++){
-     //   console.log(names[i])
-  //  }
+    let names=["john","tony","lisa","ann"]
+    for(let i=0;i<names.length; i++){
+        console.log(names[i])
+    }
 
 
 
@@ -40,9 +40,9 @@
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
-    //let names=["john","tony","lisa","ann"]
-   //   names.forEach((names) =>
-  //  console.log(names))
+    let names=["john","tony","lisa","ann"]
+      names.forEach((names) =>
+    console.log(names))
     /**
      * TODO:
      * Create the following three functions, each will accept an array and
