@@ -12,6 +12,8 @@ function showMultiplicationTable(number) {
 
  let count=0
  for (let i = 0; i < 10; i++){
+    let max = 200
+     let min = 20
      for (let j=0; j<=Math.floor(Math.random()*(max - min));j++) count++;
           if(count % 2 == 0){
          console.log(`${count}  "is even"`)
