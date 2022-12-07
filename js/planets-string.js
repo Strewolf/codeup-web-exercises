@@ -25,6 +25,7 @@
      */
 let planetsJoin=planetsArray.join("<br>")
     console.log(planetsJoin)
-   let planetsUList= `<ul><li> planets.Array.join(<li>) </li></ul>`
+   let planetsUList= `<ul><li> ${planetsArray.join(`</li><li>`)} </li></ul>`
     console.log(planetsUList)
+    document.getElementById("list").innerHTML = planetsUList
 })();
