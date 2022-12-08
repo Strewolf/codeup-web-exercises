@@ -5,17 +5,20 @@
     var circle = {
         radius: 3,
 
-        getArea: function (rad) {
+        getArea: function () {
             // TODO: complete this method
             // hint: area = pi * radius^2
-if(typeof rad==="number"){
-    return Math.pow(3,2)*Math.PI // TODO: return the proper value
-}
+    let area= Math.pow(3,2)*Math.PI // TODO: return the proper value
+return area
 
         },
 
         logInfo: function (doRounding) {
-            return Math.round(getArea)
+            if(doRounding===true){
+                return Math.round(this.getArea())
+            }else{
+                return doRounding
+            }
             // TODO: complete this method.
 
             // If doRounding is true, round the result to the nearest integer.
