@@ -5,11 +5,13 @@
     var circle = {
         radius: 3,
 
-        getArea: function () {
+        getArea: function (rad) {
             // TODO: complete this method
             // hint: area = pi * radius^2
-co
-            return Math.pow(circle,2)*Math.PI // TODO: return the proper value
+if(typeof rad==="number"){
+    return Math.pow(3,2)*Math.PI // TODO: return the proper value
+}
+
         },
 
         logInfo: function (doRounding) {
