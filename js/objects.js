@@ -49,8 +49,8 @@ let person={
          {name: 'George', amount: 320}
      ];
 shoppers.forEach(function(shopper){
-    let discountAmount= shopper.amount*.12
-    let afterDiscount= shopper.amount - discountAmount
+    let discountAmount= parseFloat(shopper.amount)*.12
+    let afterDiscount= parseFloat(shopper.amount) - discountAmount
     if (shopper.amount>200){
         console.log(shopper.name)
         console.log(`your amount before discount is $ ${shopper.amount}`)
