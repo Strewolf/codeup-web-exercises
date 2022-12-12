@@ -2,28 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Html Forms</title>
+    <title>Register With Us</title>
 </head>
 <body>
     <header><h1>Register With Us</h1></header>
     <form method="Get" action="https://request-inspector.glitch.me/">
         <label for="email">email</label>
-        <input id="email" name="email" type="text">
+        <input id="email" name="email" type="text" placeholder="enter email">
         <br>
 
         <label for="password">Password</label>
-        <input id="password" name="password" type="password">
+        <input id="password" name="password" type="password" placeholder="enter password">
         <br/>
-        <textarea name="bio" placeholder="bio"></textarea>
+        <textarea name="bio" placeholder="Enter bio here"></textarea>
         <br/>
-        <p>
-            How did you hear about us?
-        </p>
-       <label for="1">billboard</label> <input id="1" type="radio" name="submission" value="billboard"><br>
-        <label for="2">radio advertisement</label><input id="2" type="radio" name="submission" value="radio advertisement"><br>
-        <label for="3">internet advertisement</label> <input id="3" type="radio" name="submission" value="internet advertisement"><br>
-        <label for="4">other</label><input id="4" type="radio" name="submission" value="other"><br>
-        <br/>
+        <div>
+            <fieldset>
+                <p>
+                    How did you hear about us?
+                </p>
+                <input id="1" type="radio" name="submission" value="billboard"><label for="1">billboard</label><br>
+
+                <input id="2" type="radio" name="submission" value="radio advertisement"><label for="2">radio advertisement</label><br>
+
+                <input id="3" type="radio" name="submission" value="internet advertisement"><label for="3">internet advertisement</label><br>
+
+                <input id="4" type="radio" name="submission" value="other"><label for="4">other</label>
+        </fieldset>
+        </div>
         <p>
             What web browser are you using?
         </p>
