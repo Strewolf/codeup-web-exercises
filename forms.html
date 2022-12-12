@@ -5,28 +5,27 @@
     <title>Html Forms</title>
 </head>
 <body>
-<header><h1>Register With Us</h1></header>
-<form method="POST" action="https://request-inspector.glitch.me/">
+    <header><h1>Register With Us</h1></header>
+    <form method="GET" action="https://request-inspector.glitch.me/">
+        <label for="email">email</label>
+        <input id="email" name="email" type="text">
+        <br>
 
-    <label for="email">email</label>
-    <input id="email" name="email" type="text">
-    <br>
-
-    <label for="password">Password</label>
-    <input id="password" name="password" type="password">
+        <label for="password">Password</label>
+         <input id="password" name="password" type="password">
     <br/>
-    <textarea name="bio"></textarea>
+         <textarea name="bio"></textarea>
     <br/>
-    <p>
+        <p>
         How did you hear about us?
-    </p>
-    billboard <input type="radio" name="billboard" value="billboard"><br>
-    radio advertisement<input type="radio" name="radio advertisement" value="radio advertisement"><br>
-    internet advertisement <input type="radio" name="internet advertisement" value="internet advertisement"><br>
-    other <input type="radio" name="other" value="other"><br>
+        </p>
+          billboard <input type="radio" name="submission" value="billboard"><br>
+         radio advertisement<input type="radio" name="submission" value="radio advertisement"><br>
+         internet advertisement <input type="radio" name="submission" value="internet advertisement"><br>other <input type="radio" name="submission" value="other"><br>
+
     <br/>
 
-    <input type="submit">
+         <input type="submit">
 </form>
 </body>
 </html>
