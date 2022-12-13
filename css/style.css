@@ -7,8 +7,10 @@ body{
     background-color: aqua;
     background-image:url('https://www.thesprucepets.com/thmb/25bRV7b28iqalYQAYBKTj66IOdg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1319774380-c3da91f9259a47e0966007f8e10690ba.jpg')  ;
     background-position: center ;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: "Times New Roman", Times, serif;
+
 
 }
