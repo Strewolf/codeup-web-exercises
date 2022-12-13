@@ -1,3 +1,9 @@
 .fancy-header {
     color: purple;
+    text-align: center;
+    text-decoration-line: underline;
+}
+body{
+    background-color: aqua;
+    background-image:url("https://i0.wp.com/www.csscodelab.com/wp-content/uploads/2020/03/css-background-image-zoom-transition.png?resize=1080%2C712&ssl=1")  ;
 }
