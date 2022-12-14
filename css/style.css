@@ -21,5 +21,21 @@ ol{
     list-style-type: lower-roman;
 }
 .table{
-border: solid black;
+    border-collapse: collapse;
+    background-color: aqua;
+}
+
+th,td{
+border:2px solid black;
+    padding: 10px
+}
+.button{
+    transition: 1s ease-in;
+    background-color: aqua;
+
+}
+.button:hover{
+    background-color: green;
+    /*transition: .5s ease-in;*/
+    transform: rotate(360deg);
 }
