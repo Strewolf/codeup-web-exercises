@@ -74,7 +74,6 @@ fieldset {
     /* You'll need to use the `calc` function to make the width of this element match the width of the button */
     /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
     /* HINT: Examples are available at: https://glitch.com/~input-button-width */
-    width: 100%;
     padding-top: 4px ;
     padding-bottom: 4px;
     margin-top: .5em;
