@@ -20,6 +20,6 @@ ul{
 ol{
     list-style-type: lower-roman;
 }
-#table{
-
+.table{
+border: solid black;
 }
