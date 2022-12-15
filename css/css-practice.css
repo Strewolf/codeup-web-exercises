@@ -1,0 +1,22 @@
+body{
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+
+}
+.page-wrapper{
+    height: auto;
+    min-height: 100%;
+}
+.content-top{
+position: absolute;
+    top:10px
+
+}
+.content-bottom{
+
+}
+.cssBox{
+
+
+}
