@@ -55,6 +55,8 @@ a {
 }
 .container{
     margin:3em;
+    display: flex;
+    flex-direction:row;
 }
 .media{
     width:100%;
@@ -75,18 +77,19 @@ a {
 .profile-details{
    margin:0.5em;
     width:calc(25% - 1em);
-    float:left;
+
 }
 .timeline{
     margin:0.5em;
     width:calc(50% - 1em);
-    float:left;
+
+
 
 }
 .who-to-follow{
    margin:0.5em;
     width:calc(25% - 1em);
-    float:left;
+
 }
 .profile-image{
     position: absolute;
@@ -126,3 +129,19 @@ a {
 .text-muted {
     color: var(--main-link-color);
 }
+/*.profile-details{*/
+/*    margin:0.5em;*/
+/*    width:calc(25% - 1em);*/
+/*    float:left;*/
+/*}*/
+/*.timeline{*/
+/*    margin:0.5em;*/
+/*    width:calc(50% - 1em);*/
+/*    float:left;*/
+
+/*}*/
+/*.who-to-follow{*/
+/*    margin:0.5em;*/
+/*    width:calc(25% - 1em);*/
+/*    float:left;*/
+/*}*/
