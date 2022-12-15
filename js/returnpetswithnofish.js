@@ -28,7 +28,17 @@
     }
 ];
 
+function returnPetWithNoFish(pets){
+   let output=[]
+    pets.forEach(function(pet){
+        if(pet.type!=="fish"){
+            output.push(pet)
+        }
+    })
+    return output
+}
 
+console.log(returnPetWithNoFish(pets))
 
 
 
