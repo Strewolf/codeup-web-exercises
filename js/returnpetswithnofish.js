@@ -30,7 +30,7 @@
 
 function returnPetWithNoFish(pets){
    let output=[]
-    pets.forEach(function(pet){
+    pets.forEach(pet => {
         if(pet.type!=="fish"){
             output.push(pet)
         }
