@@ -110,8 +110,10 @@ margin-right:100px
 
 .large-brown-box {
     height: 5em;
-    width: 5em;
+    width: 10em;
     background: brown;
+
+
     /* enter needed declarations here */
 }
 
