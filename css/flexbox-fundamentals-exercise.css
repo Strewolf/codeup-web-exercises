@@ -28,11 +28,16 @@ h2, h3 {
 .border {border: 2px solid black;}
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 400px;
     height: 800px;
     background: white;
     padding: 1em;
     margin: 0 auto;
+
     /* enter needed declarations here */
 }
 
