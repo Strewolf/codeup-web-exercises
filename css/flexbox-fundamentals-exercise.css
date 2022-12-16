@@ -28,10 +28,11 @@ h2, h3 {
 .border {border: 2px solid black;}
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    flex-wrap: wrap;
+
     width: 400px;
     height: 800px;
     background: white;
@@ -42,15 +43,24 @@ h2, h3 {
 }
 
 section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     /* enter needed declarations here */
 }
 
 section:nth-of-type(1) {
     height: 3em;
     background: lightgreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
     /* enter needed declarations here */
 }
 section:nth-of-type(1) div:last-child {
+    display: flex;
+    align-self: flex-start;
     /* enter needed declarations here */
 }
 
@@ -58,9 +68,11 @@ section:nth-of-type(1) div:last-child {
     background: fuchsia;
     width: 3em;
     height: 1em;
+    display:flex;
 }
 
 .purple-box:nth-of-type(1) {
+
     /* enter needed declarations here */
 }
 
