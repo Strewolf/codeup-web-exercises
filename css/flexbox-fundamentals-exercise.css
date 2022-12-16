@@ -88,15 +88,14 @@ flex-grow: .3;
 }
 
 section:nth-of-type(3) {
-display: flex;
+    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-    /* enter needed declarations here */
+     /*enter needed declarations here */
 }
 
 section:nth-of-type(3) h3 {
-display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+margin-right:100px
     /* enter needed declarations here */
 
 }
