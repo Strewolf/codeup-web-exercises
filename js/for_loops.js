@@ -22,7 +22,7 @@ function showMultiplicationTable(number) {
      }
  }
 
- function makePyramid()
+ function makePyramid(){
      let row = 10
      let output = ''
      for(let i = 1; i<row;i++){
