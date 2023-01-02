@@ -1,5 +1,5 @@
 /* Small devices (phones and pocket devices, 576 and up) */
-@media screen and (min-width:576px) and (orientation: landscape) { /* ... */
+@media screen and (min-width:576px)  { /* ... */
 body{
 background-color: #b4d455;
 
