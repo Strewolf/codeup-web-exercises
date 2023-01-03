@@ -1,0 +1,24 @@
+.btn-outline-success {
+    font-size:12px ;
+    display: flex;
+    width: 275px;
+}
+.nav-link {
+    font-weight: bold;
+}
+.btn-outline-success:hover {
+    background-color: blue;
+    display: inline-block;
+
+}
+.btn-outline-success {
+    color: dodgerblue;
+    border-color: dodgerblue;
+}
+
+.d-flex  {
+    flex-direction: row;
+    align-items: center;
+    display: inline-block;
+
+}
