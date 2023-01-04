@@ -3,3 +3,38 @@
 body{
     font-family: roboto, SansSerif;
 }
+h1{
+    font-weight: 700;
+}
+.line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    bottom: 50%;
+    border: none;
+    border-left: 1px solid black;
+    height: 100%;
+}
+h6{
+    font-weight: bold;
+}
+hr {
+    border: 10px;
+    height: 10px;
+    background: green;
+}
+h5{
+    font-weight: bold;
+}
+.skills-and-abilities{
+    color: dodgerblue;
+    font-weight: bold;
+}
+.academic{
+    color: dodgerblue;
+    font-weight: bold;
+}
+.professional-experience{
+    color: dodgerblue;
+    font-weight: bold;
+}
