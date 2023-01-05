@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap');
+
+body{
+    font-family: 'Abel', sans-serif;
+}
+
+.bg-codeup-color {
+    background-color: rgb(240,240,240);
+}
+img {
+    height: 32px;
+    width: 32px;
+
+    margin: 8px;
+}
+h5 {
+    margin-right: 2em;
+}
+.nav-subjects a {
+    font-size: small;
+    margin-top: -4px;
+}
+.abel-font-22{
+    font-family: 'Abel', sans-serif;
+}
+.anton-font-22 {
+    font-family: 'Anton', sans-serif;
+}
+.custom-font-size-h1>h1{
+    font-size: 3.85em;
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+.circle-red {
+    background-color: #E6563B;
+    width: 100px;
+    height: 100px;
+    border: 8px solid white;
+    margin: 15px;
+}
+.circle-orange {
+    background-color: #EB9D3A;
+    width: 100px;
+    height: 100px;
+    border: 8px solid white;
+    margin: 15px;
+}
+.circle-green {
+    background-color: #7CB06C;
+    width: 100px;
+    height: 100px;
+    border: 8px solid white;
+    margin: 15px;
+}
+.circle-blue {
+    background-color: #00ABA9;
+    width: 100px;
+    height: 100px;
+    border: 8px solid white;
+    margin: 15px;
+}
+.circle-row {
+    margin: 6px;
+}
+.img-4 {
+    width: 500px;
+    height: auto;
+    border: 10px solid lightgrey;
+}
+.circle-red-1 {
+    background-color: #E6563B;
+    width: 18px;
+    height: 18px;
+    padding: 0px;
+    /*margin-top: -8px;*/
+}
+.circle-orange-1 {
+    background-color: #EB9D3A;
+    width: 18px;
+    height: 18px;
+    padding: 0px;
+    /*margin-top: -8px;*/
+    margin-left: 8px;
+}
+.circle-green-1 {
+    background-color: #7CB06C;
+    width: 18px;
+    height: 18px;
+    padding: 0px;
+    /*margin-top: -8px;*/
+    margin-left: 8px;
+}
+.circle-blue-1 {
+    background-color: #00ABA9;
+    width: 18px;
+    height: 18px;
+    padding: 0px;
+    /*margin-top: -8px;*/
+    margin-left: 8px;
+}
+.image-caption {
+    margin-left: 8px;
+
+}
+.letter-d {
+    font-size: 11px;
+}
+.img-style {
+    width: 500px;
+    height: auto;
+    border: 10px solid lightgrey;
+}
