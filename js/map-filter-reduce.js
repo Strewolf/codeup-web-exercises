@@ -35,7 +35,28 @@ const users = [
         yearsOfExperience: 9
     }
 ];
-let threeLanguages = users.filter(function(n) {
-    if(user.languages.length >=3){
-    return user}
-});
+const threeLanguages = users.filter(user => user.languages.length >= 3);
+console.log(threeLanguages)
+const emailAddress = users.map(user=>user.email)
+console.log(emailAddress)
+const totalYears = users.yearsOfExperience.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+}, 0);
+const averageYears=totalYears/user.length;
+console.log(averageYears)
+const longestEmail = users.email.reduce((accumulator, currentValue) => {
+    return accumulator.length > currentValue.length ? accumulator : currentValue;
+}, '');
+console.log(longestEmail)
+const names = users.reduce((accumulator, currentValue) => {
+    return accumulator + ', ' + currentValue.name;
+}, 'Your instructors are: ');
+console.log(names);
+const languages = users.reduce((accumulator, currentValue) => {
+    return accumulator.concat(currentValue.languages);
+}, []);
+console.log(languages); // ['clojure', 'javascript', 'java', 'scala', 'php', 'javascript', 'bash', 'java', 'php', 'sql', 'html', 'css', 'javascript', 'php']
+const uniqueLanguages = [...new Set(languages)];
+console.log(uniqueLanguages); // ['clojure', 'javascript', 'java', 'scala', 'php', 'bash', 'sql', 'html', 'css']
+
+
