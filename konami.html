@@ -13,6 +13,27 @@
   $(document).keyup(function(event){
     console.log(event.keyCode);
   });
+
+  $(document).ready(function() {
+    let konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
+    let index = 0;
+
+    $(document).keyup(function(event) {
+      if (event.keyCode == konamiCode[index]) {
+        index++;
+      } else {
+        index = 0;
+      }
+
+      if (index == konamiCode.length) {
+        let audio = new Audio("/js/audio/success.mp3");
+        audio.play();
+        index = 0;
+        alert('You have added 30 lives!');
+      }
+    });
+  });
+
 </script>
 </body>
 </html>
