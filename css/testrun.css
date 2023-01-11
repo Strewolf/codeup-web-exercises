@@ -1,0 +1,18 @@
+/* Define the animation */
+@keyframes scroll {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 0% 100%;
+    }
+}
+
+/* Apply the animation and styling to the container */
+body {
+    background-image: url("../img/pizza.png");
+    animation: scroll 10s linear infinite;
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: right;
+}
