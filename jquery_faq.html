@@ -6,8 +6,8 @@
   <link rel="stylesheet" href="./css/jquery_faq.css">
 </head>
 <body>
-<dl style=".invisible:">
-  <h2>10 FAQs about national parks.</h2>
+<dl>
+  <h2>Toggle visibility>10 FAQs about national parks.</h2>
 
   <dt>1. What are the most popular national parks in the United States?</dt>
   <dd class="invisible">The most popular national parks in the United States include Yosemite, Yellowstone, Zion, Grand Canyon, and Rocky Mountain.</dd>
@@ -39,6 +39,14 @@
   <dt>10. Are there any educational programs available in national parks?</dt>
   <dd class="invisible">Many national parks offer educational programs for visitors of all ages, including ranger-led tours, Junior Ranger programs, and volunteer opportunities.</dd>
 </dl>
+<script>
+  $(document).ready(function() {
+    $("#toggle-link").click(function() {
+      $("dd").toggleClass("invisible");
+    });
+  });
 
+</script>
+<a href="#" id="toggle-link">Toggle visibility</a>
 </body>
 </html>
