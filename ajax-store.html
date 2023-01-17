@@ -26,10 +26,19 @@
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
     $.ajax("./data/inventory.json").done(function (data, status, jqXhr){
-      alert("it works!")
-
       console.log(data)
-    })
+      //iterating through the json data
+      $.each(data, function(i, item){
+        //appending the data to the element with id 'insertProducts'
+        var row = $('<tr>');
+        row.append('<td>' + item.title + '</td>');
+        row.append('<td>' + item.quantity + '</td>');
+        row.append('<td>' + item.price + '</td>');
+        row.append('<td>' + item.categories + '</td>');
+        $('#insertProducts').append(row);
+      });
+    });
+
     // TODO: Take the data from inventory.json and append it to the products table
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
