@@ -1,12 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="./js/jquery.js"></script>
     <meta charset="UTF-8">
     <title>ajax blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-<div id="posts">
+<!--<div class="row">-->
+<!--    <div class="col-4">-->
+<!--        <div class="list-group" id="list-tab" role="tablist">-->
+<!--            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>-->
+<!--            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>-->
+<!--            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>-->
+<!--            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="col-8">-->
+<!--        <div class="tab-content" id="nav-tabContent">-->
+<!--            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>-->
+<!--            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>-->
+<!--            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>-->
+<!--            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<table class=" table table-striped" id="posts">
 
-</div>
+    <script>
+    $.ajax("./data/blog.json").done(function (data,status,jqXhr){
+        $.each(data, function(i, post){
+            //appending the data to the element with id 'insertProducts'
+            let row = $('<ul class="list-unstyled">');
+            row.append('<h1 class="text-center">' + post.title + '</h1>');
+            row.append('<li>' + post.content + '</li>');
+            row.append('<li>' + post.categories + '</li>');
+            row.append('<li>' + post.date + '</li>');
+            $('#posts').append(row);
+        });
+    });
+
+    const neighborhood1 = {
+        neighborhood: "Lovely Estates",
+        medianHomePrice: 280000,
+        pool: true,
+        tennis: false,
+        crimeRate: "low",
+        schools: [
+            {name: "Elementary School", rating: 8},
+            {name: "Middle School", rating: 6},
+            {name: "High School", rating: 8}
+        ]
+    };
+
+    const neighborhood2 = {
+        neighborhood: "Luminous Estates",
+        medianHomePrice: 270000,
+        pool: true,
+        tennis: false,
+        crimeRate: "high",
+        schools: [
+            {name: "Elementary School", rating: 8},
+            {name: "Middle School", rating: 8},
+            {name: "High School", rating: 8}
+        ]
+    }
+
+    const neighborhood3 = {
+        neighborhood: "Oak Mountain",
+        medianHomePrice: 290000,
+        pool: false,
+        tennis: false,
+        crimeRate: "low",
+        schools: [
+            {name: "Elementary School", rating: 8},
+            {name: "Middle School", rating: 8},
+            {name: "High School", rating: 8}
+        ]
+    }
+
+    const neighborhood4 = {
+        neighborhood: "Ginormous Acres",
+        medianHomePrice: 350000,
+        pool: true,
+        tennis: true,
+        crimeRate: "low",
+        schools: [
+            {name: "Elementary School", rating: 9},
+            {name: "Middle School", rating: 9},
+            {name: "High School", rating: 9}
+        ]
+    }
+    const goodNeighborhood = neighborhood1.filter(() => {
+        if ((neighborhood1.medianHomePrice>"3000") && (neighborhood1.crimeRate="low") && (neighborhood1.schools.name.rating<=24)){
+            console.log(true)
+        } else{
+            return false;
+        }
+        console.log(goodNeighborhood)
+    });
+
+
+    </script>
+
+</table>"
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
