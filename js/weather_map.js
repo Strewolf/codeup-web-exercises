@@ -27,8 +27,10 @@
 // })
 
 let button=document.querySelector(".button")
-let button=document.querySelector(".button")
-let button=document.querySelector(".button")
+let inputValue=document.querySelector(".inputValue")
+let name=document.querySelector(".name")
+let desc=document.querySelector(".desc")
+let temp=document.querySelector(".temp")
 
 
 $.ajax("https://api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&appid=24c04769a5bbc5ce9b6861e15c1f7494", {
