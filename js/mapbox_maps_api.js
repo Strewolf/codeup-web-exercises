@@ -1,5 +1,4 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoiaG9yYWNlLXNtaXRoIiwiYSI6ImNsZDF5MzM1cTAzYmUzbm96cjhudDk3NDUifQ.5vXuPYobqRdG1GfshzCGeg';
-const myToken='pk.eyJ1IjoiaG9yYWNlLXNtaXRoIiwiYSI6ImNsZDF5MzM1cTAzYmUzbm96cjhudDk3NDUifQ.5vXuPYobqRdG1GfshzCGeg'
+
 navigator.geolocation.getCurrentPosition(successLocation, errorLocation,{
     enableHighAccuracy:true
 })
