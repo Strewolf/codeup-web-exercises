@@ -1,4 +1,4 @@
-
+mapboxgl.accessToken=mapboxKey
 navigator.geolocation.getCurrentPosition(successLocation, errorLocation,{
     enableHighAccuracy:true
 })
@@ -11,6 +11,7 @@ function errorLocation() {
     setupMap([36.1716, 115.1391])
 }
 
+
 function setupMap (center) {
     const map = new mapboxgl.Map({
         container: 'map',
@@ -22,7 +23,7 @@ function setupMap (center) {
     map.addControl(nav)
 
     map.addControl(new MapboxDirections({
-        accessToken: myToken,
+        accessToken: mapboxKey,
         unit: 'imperial',
         profile: 'mapbox/driving',
     }), 'top-left');
