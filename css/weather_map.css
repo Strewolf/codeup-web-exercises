@@ -5,19 +5,20 @@
 }
 
 body{
-    font-family: "Toppan Bunkyu Midashi Gothic", SansSerif;
+
 }
 
 .input{
-    text-align: center;
-    margin: 100px 0;
+text-align: center;
+   margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 input[type=text]{
     height: 30px;
     width: 400px;
     background: #e7e7e7;
-    font-family: "Toppan Bunkyu Midashi Gothic",SansSerif;
+
     font-weight: bold;
     font-size: 20px;
     border: none;
@@ -29,7 +30,7 @@ input[type=submit]{
     height: 30px;
     width: 80px;
     background: #e7e7e7;
-    font-family: "Toppan Bunkyu Midashi Gothic",SansSerif;
+
     font-weight: bold;
     font-size: 20px;
     border: none;
@@ -40,17 +41,4 @@ input[type=submit]{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-width: 40px;
-    border: black;
-}
-#card{
-    border: black;
-    border-width: 3px;
-
-}
-.card {
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
 }
