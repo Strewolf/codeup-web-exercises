@@ -5,5 +5,6 @@
     <mapping directory="$PROJECT_DIR$/Codeup-design" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/coffee-project" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/mediaquery" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/zenith-js-objects-arrays-assesment" vcs="Git" />
   </component>
 </project>

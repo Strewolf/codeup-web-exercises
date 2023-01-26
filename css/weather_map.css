@@ -65,7 +65,7 @@ p {
     display: flex;
     margin: auto;
 }
-card {
+.card {
      background: linear-gradient(45deg, deepskyblue, dodgerblue);
      background-size: 600% 600%;
      -webkit-animation: Gradient 5s ease-in infinite;
