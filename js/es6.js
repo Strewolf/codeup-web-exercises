@@ -1,6 +1,8 @@
 /*
  * Complete the TODO items below
  */
+
+
 const users = [
     {
         name: 'zach',
@@ -95,3 +97,5 @@ let list = '<ul>';
     // TODO: rewrite the assignment below to use template strings
     list += `<li> ${developer} </li>`;
     list += `</ul>`;
+
+
