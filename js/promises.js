@@ -7,6 +7,7 @@ async function getLastCommit(username) {
         headers: {
             'Authorization': `GithubT`
         }
+
     });
 
     const data = await response.json();
@@ -16,7 +17,9 @@ async function getLastCommit(username) {
     const date = new Date(lastCommit.created_at);
     const options = { timeZone: 'America/Chicago' };
     return date.toLocaleString('default', options);
+
 }
+
 
 async function testGetLastCommit() {
     const username = 'Strewolf';
