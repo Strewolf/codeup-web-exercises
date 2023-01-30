@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom-warmups.html</title>
+    <link rel="stylesheet" href="./css/jquery_faq.css">
+</head>
+<body>
+<input id="btn" type="button" value="button">
+<script src="./js/jquery.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#btn").on('click', function () {
+            $('body').toggleClass('red'); // or alert($(this).attr('id'));
+        });
+    })
+</script>
+<style>
+    .red {
+    background-color: red;
+    }
+
+</style>
+</body>
+</html>
